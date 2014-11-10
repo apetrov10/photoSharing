@@ -1,0 +1,87 @@
+body{
+	padding:0px;
+	font-family: Verdana,sans-serif;
+	background: white;
+	color:#505050;
+}
+
+td {
+	font-size:13px;
+	line-height:16px;	
+}
+
+h1{
+	font-size:16px;
+	font-weight:bold;
+	margin:15 0 25 0px;
+	color:#white;
+}
+h2{
+	font-size:22px;
+	font-weight:bold;
+	color:white;
+}
+header {
+width: 98%;
+background: #0B7019;
+float: center;
+margin: 0 0 .5% 0;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #202020
+}
+footer {
+width: 98%;
+background: #0B7019;
+float: center;
+margin: 0 0 .5% 0;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #202020
+}
+
+address {
+font-size : 16px;
+text-align : center;
+color: #efefef;
+padding: 1% 0;
+text-shadow: 1px 1px 0px #202020
+}
+
+.cont{
+	background-color: #F1F1F1;
+}
+a.hovertext { position: relative; width: 200px; text-decoration: none !important; text-align: center; } 
+a.hovertext:after { content: attr(title); position: absolute; left: 1.9em ; bottom: 0; padding: 0.5em 10px; width: 230px; background: rgba(0,0,0,0.8); text-decoration: none !important; color: #fff; opacity: 0; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; } 
+a.hovertext:hover:after, 
+a.hovertext:focus:after { opacity: 1.0; }
+.navigation{
+
+font-size: 90%;
+
+display: block;
+
+padding: 0.4em 0 0.4em 0.5em;
+
+border-left: 12px solid #094B12;
+
+border-right: 1px solid #094B12;
+
+background-color: #0B7019;
+
+color: #FFFFFF;
+
+text-decoration: none;
+ 
+}
+a.menu:link {font:bold 13px verdana, "arial"; color:white;text-decoration:none;background:url(images/bltm.gif) top left no-repeat;padding:5 10 5 20px;margin-left:10px;}
+a.menu:visited {font:bold 13px verdana, "arial"; color:white;text-decoration:none;background:url(images/bltm.gif) top left no-repeat;padding:5 10 5 20px;margin-left:10px;}
+a.menu:hover {font:bold 13px verdana, "arial"; color:yellow;text-decoration:underline;background:url(images/bltm.gif) top left no-repeat;padding:5 10 5 20px;margin-left:10px;}
+a.menu:visited.hover {font:bold 13px verdana, "arial"; color:yellow;text-decoration:underline;background:url(images/bltm.gif) top left no-repeat;padding:5 10 5 20px;margin-left:10px;}
+
+
+a.inner:link {font: 13px verdana, "arial"; color:green;text-decoration:none;}
+a.inner:visited {font: 13px verdana, "arial"; color:green;text-decoration:none;}
+a.inner:hover {font: 13px verdana, "arial"; color:#990000;text-decoration:underline;}
+a.inner:visited.hover {font: 13px verdana, "arial"; color:#990000;text-decoration:underline;}
+
+
+div.center {text-align:center;}

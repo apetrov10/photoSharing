@@ -1,0 +1,34 @@
+<style type="text/css" media="screen" >
+table.info { 
+	padding-left:25px;
+}
+
+</style>
+
+<FORM METHOD="post" ACTION="index.php" ENCTYPE="multipart/form-data">
+<input type="hidden" name="cmd" value="editProfile">
+<input type="hidden" name="code" value="<?php print $code; ?>">
+
+<table class="info">	
+<tr>
+	<td>Потребител: <?php print $username?></td>
+</tr>
+<tr>
+	<td>Име: <INPUT NAME="firstName" TYPE="text" value="<?php print $firstName?>"</td>
+</tr>
+<tr>	
+	<td>Фамилия: <INPUT NAME="lastName" TYPE="text" value="<?php print $lastName?>"</td>
+</tr>
+<tr>
+	<td>Държава: <select name="country" ><?php print $countryRow; ?></td>
+</tr>	
+<tr>	
+	<td>Фотоапарат: <INPUT NAME="camera" TYPE="text" value="<?php print $camera?>"</td>
+</tr>	
+<tr>	
+	<td>Обективи: <INPUT NAME="lenses" TYPE="text" value="<?php print $lenses?>"</td>
+</tr>
+<tr>
+<td colspan=2><INPUT TYPE="Submit" VALUE="Редактирай"></td>
+</tr>
+</table>

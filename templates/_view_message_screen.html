@@ -1,0 +1,44 @@
+<center>
+<table width="620">
+<tr>
+<td>От: </td><td><?php print $autor;?></td>
+</tr>
+<tr>
+<td>Дата: </td><td><?php print $date;?></td>
+</tr>
+<tr>
+<td>Заглавие: </td><td><?php print $title;?></td>
+</tr>
+<tr>
+<td>Съдържание: </td><td><?php print $text;?></td>
+</tr>
+
+</table>
+<table width="620">
+<form action="index.php" method="post">
+<input type="hidden" name="cmd" value="sendMessage">
+<input type="hidden" name="user2" value="<?php print $autor;?>">
+<tr>
+<tr>
+</tr>
+<tr>
+<p>
+<tr>
+<td><b>Отговори</b></td>
+</tr>
+<p>
+</tr>
+<td>Заглавие: </td><td><INPUT NAME="title" TYPE="text"></td>
+</tr>
+<tr>
+<td>Текст: </td><td><textarea NAME="text" rows="4" cols="50"></textarea></td>
+</tr>
+
+<tr>
+<td colspan=2><INPUT TYPE="Submit" VALUE="Отговори"></td>
+</tr>
+
+</form>
+</table>
+
+</center>

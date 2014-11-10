@@ -1,0 +1,30 @@
+<style type="text/css" media="screen" >
+a img { 
+	border: none;
+	padding-left:25px;
+	padding-bottom:25px;
+	padding-top:25px;
+}
+.comments{
+	padding-left:25px;
+	padding-top:25px;
+	padding-bottom:45px;
+}
+</style>
+
+<center><a href="index.php?cmd=viewImgScreen&imgid=<?php print $imgid?>"><img src="<?php print $full?>" height="333" width="500" alt="Img"></a>&nbsp;</center>
+<br />
+
+&nbsp; <b>Последно качени:</b>
+<p><?php print $last_ratings;?>
+<br>
+&nbsp; <b>Последни коментари:</b>
+<table class = "comments">
+<tr bgcolor="F1F1F1">
+	<td width = "100px">От:</td>
+	<td width = "150px">Към снимка: </b></td>
+	<td width = "120px">Дата: </td>
+	<td>Текст: </td>
+</tr>
+<?php print $last_comments;?>
+</table>

@@ -1,0 +1,23 @@
+<style type="text/css" media="screen" >
+.msgs { 
+	padding-top:45px;
+}
+
+</style><center>
+<p><font color="red"><?php print $errorMsg; ?></font></p>
+<form action="index.php" method="get">
+</form>
+<table class = "msgs">
+
+<tr bgcolor="#BBBBBB">
+	<td colspan="4"><b>Съобщения:</b></td>
+</tr>
+<tr>
+	<td><b>От:</b></td>
+	<td colspan="3"><b>Заглавие:</b></td>
+</tr>
+<?php print $msg?>
+<?php print $messages; ?>
+</table>
+
+</center>

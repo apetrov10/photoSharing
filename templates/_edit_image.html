@@ -1,0 +1,52 @@
+<style type="text/css" media="screen" >
+.tbup{
+	padding-top:30px;
+}
+.up { 
+	padding-left:45px;
+}
+
+</style>
+<FORM METHOD="post" ACTION="index.php" ENCTYPE="multipart/form-data">
+<input type="hidden" name="cmd" value="editImage">
+<input type="hidden" name="imgid" value="<?php print $imgid; ?>">
+<table border="0" class = "tbup">
+
+<tr>
+<td class="up" colspan="2"><b>Редактиране на информация за снимка</b></td>
+</tr>
+<tr>
+<td height="20px"></td>
+</tr>
+<tr>
+<td class="up">Име: </td><td><INPUT NAME="name" TYPE="text" value="<?php print $name; ?>"></td>
+</tr>
+<tr>
+<td class="up">Описание: </td><td><INPUT NAME="descr" TYPE="text" value="<?php print $descr; ?>"></td>
+</tr>
+<tr>
+<td class="up">Фотоапарат: </td><td><INPUT NAME="camera" TYPE="text" value="<?php print $camera; ?>"></td>
+</tr>
+<tr>
+<td class="up">Обектив: </td><td><INPUT NAME="lense" TYPE="text" value="<?php print $lense; ?>"></td>
+</tr>
+<tr>
+<td class="up">Скорост на затвора: </td><td><INPUT NAME="speed" TYPE="text" value="<?php print $speed; ?>"></td>
+</tr>
+<tr>
+<td class="up">Бленда: </td><td><INPUT NAME="aperture" TYPE="text" value="<?php print $aperture; ?>"></td>
+</tr>
+<tr>
+<td class="up">ISO: </td><td><INPUT NAME="iso" TYPE="text" value="<?php print $iso; ?>"></td>
+</tr>
+<tr>
+<td class="up">Категория:</td><td><select name="cat" ><?php print $imgRow; ?>
+</select> </td>
+</tr>
+
+<tr>
+<td  class="up" colspan=2><INPUT TYPE="Submit" VALUE="Редактирай"></td>
+<td><a class="inner" href="index.php?cmd=deleteImg&imgid=<?php print $imgid; ?>&lnk=1">Изтрий</td>
+</tr>
+</table>
+</FORM>

@@ -1,0 +1,28 @@
+<style type="text/css" media="screen" >
+table.links { 
+	border: none;
+	padding-left:25px;
+	padding-bottom:25px;
+}
+left{
+	padding-left:25px;
+}
+
+</style>
+
+<center><p><font color="red"><?php print $errorMsg; ?></font></p>
+<table class="links" width="600">
+<form action="index.php" method="get">
+<input type="hidden" name="cmd" value="">
+
+</form>
+<tr>
+	<td colspan="3"><b>Снимки:</b></td>
+</tr>
+<tr>
+	<td><b>Име:</b></td>
+	<td><b>От:</b></td>
+</tr>
+<?php print $pictures; ?>
+</table><center>
+<left>&nbsp<?php print $pages;?></left>

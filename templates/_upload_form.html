@@ -1,0 +1,57 @@
+<style type="text/css" media="screen" >
+.tbup{
+	padding-top:30px;
+}
+.up { 
+	padding-left:45px;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<FORM METHOD=post ACTION=index.php ENCTYPE=multipart/form-data>
+<input type="hidden" name="cmd" value="upload">
+
+<legend class = "up"><b>Добавяне на нова снимка<b></legend>
+<table class = "tbup" border=0>
+<tr>
+<td class = "up" colspan="2">Максимално разрешения размер на изображението е 1024 пиксела по дължина.</td>
+</tr>
+<tr>
+<td class = "up" colspan="2" height = "20px"></td>
+</tr>
+<tr>
+<td class = "up">Изображение </td><td><INPUT NAME=upfile TYPE=file></td>
+</tr>
+<tr>
+<td class = "up">Име: </td><td><INPUT NAME=name TYPE=text></td>
+</tr>
+<tr>
+<td class = "up">Описание: </td><td><INPUT NAME=descr TYPE=text></td>
+</tr>
+<tr>
+<td class = "up">Фотоапарат: </td><td><INPUT NAME=camera TYPE=text></td>
+</tr>
+<tr>
+<td class = "up">Обектив: </td><td><INPUT NAME=lense TYPE=text></td>
+</tr>
+<tr>
+<td class = "up">Скорост на затвора: </td><td><INPUT NAME=speed TYPE=text></td>
+</tr>
+<tr>
+<td class = "up">Бленда: </td><td><INPUT NAME=aperture TYPE=text></td>
+</tr>
+<tr>
+<td class = "up">ISO: </td><td><INPUT NAME=iso TYPE=text></td>
+</tr>
+<tr>
+<td class = "up">Категория: </td><td><select type="hidden" name="id" value="<?php print $id;?>"><?php print $imgRow; ?>
+</select> </td>
+</tr>
+<tr>
+<td height = "20px"></td>
+</tr>
+<tr>
+<td colspan=2 align="center"><INPUT TYPE=Submit VALUE=Качи></td>
+</tr>
+</table>
+</FORM>

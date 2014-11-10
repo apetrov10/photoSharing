@@ -1,0 +1,44 @@
+<?php
+
+$msgArray['DB_unable_to_connect'] = '<center><br><b>Не мога да се вържа към СУБД. Моля, каката или баткото пред компютъра да ме настроят за да проработя!</b></center>';
+$msgArray['cat_added'] = '<center><br><b>Категорията е добавена!</b></center>';
+$msgArray['cat_not_added'] = '<center><br><b>Категорията не е добавена!</b></center>';
+$msgArray['cat_edited'] = '<center><br><b>Категорията е редактирана!</b></center>';
+$msgArray['empty_specName'] = 'Моля, въведете името на специалността';
+$msgArray['spec_added'] = 'Специалността беше успешно добавена!';
+$msgArray['spec_edited'] = 'Специалността беше успешно редактирана!';
+$msgArray['error_spec_delete'] = 'Възникна грешка при изтриването на посочената специалност! Моля, опитайте отново!';
+$msgArray['spec_deleted'] = 'Указаната специалност, както и студентите обучаващи се по нея бяха изтрити!';
+$msgArray['no_such_student'] = '<font color="red"><b>Няма такъв студент</b></font>';
+$msgArray['br_no_such_cat'] = '<tr><td colspan="5" align="center"><font color="red"><b>Няма такава категория</b></font></td></tr>';
+$msgArray['br_no_such_spec'] = '<tr><td colspan="5" align="center"><font color="red"><b>Няма такава специалност</b></font></td></tr>';
+$msgArray['cat_added'] = '<tr><td colspan="5" align="center"><font color="red"><b>Категорията е добавена!</b></font></td></tr>';
+$msgArray['login_invalid'] = '<font color="red"><b>Невалидно потребителско име или парола!</b></font>';
+$msgArray['wrong_name'] = '<font color="red"><b>Невалидно име!</b></font>';
+$msgArray['reg_success'] = '<font color="red"><b>Регистрацията е успешна!</b></font>';
+$msgArray['reg_failed'] = '<font color="red"><b>Грешка! Потребителското име/електронната поща е заето!</b></font>';
+$msgArray['br_no_such_comments'] = '<tr><td colspan="5" align="center"><font color="red"><b>Потребителя няма добавени коментари!</b></font></td></tr>';
+$msgArray['br_no_such_pics'] = '<tr><td colspan="5" align="center"><font color="red"><b>Потребителя няма добавени снимки!</b></font></td></tr>';
+$msgArray['reg_error'] = '<font color="red"><b>Регистрацията е неуспешна!</b></font>';
+$msgArray['no_match'] = '<font color="red"><b>Въведените пароли не съвпадат!</b></font>';
+$msgArray['old_pass_error'] = '<font color="red"><b>Грешна парола!</b></font>';
+$msgArray['change_succesfull'] = '<font color="red"><b>Паролата е сменена успешно!</b></font>';
+$msgArray['upload_succesfull'] = '<font color="red"><b>Снимката е добавена успешно!</b></font>';
+$msgArray['upload_unsuccesfull'] = '<font color="red"><b>Неуспешно качване!</b></font>';
+$msgArray['banned'] = '<font color="red"><b>Потребителят е наказан!</b></font>';
+$msgArray['msg_sent'] = '<font color="red"><b>Съобщението е изпратено успешно!</b></font>';
+$msgArray['comment_deleted'] = '<font color="red"><b>Коментарът е изтрит!</b></font>';
+$msgArray['invalid_first_name'] = '<font color="red"><b>Невалидно име!</b></font>';
+$msgArray['invalid_last_name'] = '<font color="red"><b>Невалидна фамилия!</b></font>';
+$msgArray['invalid_email'] = '<font color="red"><b>Невалидна електронна поща!</b></font>';
+$msgArray['short_password'] = '<font color="red"><b>Паролата е твърде кратка!</b></font>';
+$msgArray['delete_successfull'] = '<font color="red"><b>Снимката е изтрита успешно!</b></font>';
+$msgArray['delete_unsuccessfull'] = '<font color="red"><b>Снимката е не е изтрита!</b></font>';
+$msgArray['no_images'] = '<font color="red"><b>Няма снимки в избраната категория!</b></font>';
+$msgArray['link_sent'] = '<font color="red"><b>На електронната поща е изпратен линк за заявка на нова парола!</b></font>';
+$msgArray['no_such_mail'] = '<font color="red"><b>Не същестува потребител с такава електронна поща!</b></font>';
+$msgArray['pass_not_match'] = '<font color="red"><b>Паролите не съвпадат!</b></font>';
+$msgArray['msg_deleted'] = '<font color="red"><b>Съобщението е изтрито!</b></font>';
+$msgArray['invalid_username'] = '<font color="red"><b>Невалидно потребителско име!</b></font>';
+$msgArray['no_messages'] = '<font color="red"><b>Няма лични съобщения!</b></font>';
+?>

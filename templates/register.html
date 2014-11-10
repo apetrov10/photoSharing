@@ -1,0 +1,43 @@
+<style type="text/css" media="screen" >
+legend { 
+	padding-top:25px;
+}
+
+</style>
+<form id='registration' action='index.php' method='post'
+    accept-charset='UTF-8'>
+<center>
+
+
+<legend><b>Регистрация<b></legend>
+<p><font color="red"><?php print $errorMsg; ?></font></p>
+<table width="600">
+<input type='hidden' name='submitted' id='submitted' value='1'/>
+<input type='hidden' name='cmd' id='cmd' value='registration'/>
+<tr>
+	<td><label for='email' >Мейл адрес:</label>
+	<td><input type='text' name='email' id='email' maxlength="50" />
+</tr>
+<tr>
+	<td><label for='username' >Потребителско име:</label>
+	<td><input type='text' name='username' id='username' maxlength="50" />
+	<td>(Букви, цифри и _ - поне 5 символа)</td>
+</tr>
+<tr>
+	<td><label for='password' >Парола:</label>
+	<td><input type='password' name='password' id='password' maxlength="50" />
+	<td>(Дължина минимум 6 символа)</td>
+</tr>
+<tr>
+	<td><label for='password' >Повтори парола:</label>
+	<td><input type='password' name='password2' id='password2' maxlength="50" />
+</tr>
+<tr>
+	<td><label for='country' >Държава:</label>
+	<td><select type="hidden" name="id" value="<?php print $id;?>"><?php print $countryRow; ?>
+</select> </td>
+</tr>
+</table>
+<input type='submit' name='Submit' value='Регистрирай' />
+</center>
+</form>

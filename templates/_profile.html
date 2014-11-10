@@ -1,0 +1,65 @@
+<style type="text/css" media="screen" >
+a img { 
+	border: none;
+	padding-left:25px;
+	padding-bottom:25px;
+}
+.info{
+	padding-left:25px;
+	padding-top:25px;
+}
+.browse{
+	padding-left:25px;
+	padding-top:25px;
+}
+</style>
+
+<p><font color="red"><center><?php print $errorMsg; ?></center></font></p>
+<form action="index.php" method="post">
+<input type="hidden" name="user" value="<?php print $username?>">
+<div class= "info">
+<table>
+<tr>
+    <th class="tg-031e" width = "500px"></th>
+    <th class="tg-031e" rowspan="7" valign="top"><a class="inner" href="index.php?cmd=ownPics&pg=1&autor=<?php print $username;?>">Снимки на автора<p>
+	<a class="inner" href="index.php?cmd=ownComments&pg=1&autor=<?php print $username;?>">Коментари на автора</th>
+  </tr>
+<tr>
+	<td>Потребител: <?php print $username?></td>
+</tr>
+<tr>
+	<td>Име: <?php print $firstName?></td>
+</tr>
+<tr>	
+	<td>Фамилия: <?php print $lastName?></td>
+</tr>
+<tr>
+	<td>Държава: <?php print $country?></td>
+</tr>	
+<tr>	
+	<td>Фотоапарат: <?php print $camera?></td>
+</tr>	
+<tr>	
+	<td>Обективи: <?php print $lenses?></td>
+</tr>
+<tr>	
+	<td></td>
+</tr>
+<tr>	
+	<td><b>Рейтинг: </b><?php print $rating?></td>
+</tr>
+</tr>
+<tr>	
+	<?php print $edit?>
+</tr>
+</table>
+</div>
+<div class= "browse">
+<table>
+<tr>
+
+</tr>
+</tr>
+</table>
+</div>
+

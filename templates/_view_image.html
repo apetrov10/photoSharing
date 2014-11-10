@@ -1,0 +1,39 @@
+<style type="text/css" media="screen" >
+img.pic { 
+	padding-left:25px;
+	padding-top:25px;
+}
+.info {
+	padding-left:15px;
+}
+</style>
+<img class = "pic" src="<?php print $full?>" alt="Img">
+
+<center><?php print $selected?></center>
+<center><?php print $deleteimg?></center>
+<center><?php print $edit?></center>
+<div class="info">
+<b>Име: </b><?php print $name; ?><br>
+<b>Описание: </b><?php print $descr?><br>
+<b>Автор: </b><a class="inner" href="index.php?cmd=viewProfile&autor=<?php print $autor?>"><?php print $autor?></a><br>
+<b>Фотоапарат: </b><?php print $camera; ?><br>
+<b>Обектив: </b><?php print $lense; ?><br>
+<b>Бленда: </b><?php print $aperture; ?><br>
+<b>Скорост на затвора: </b><?php print $speed; ?><br>
+<b>ISO: </b><?php print $iso; ?><br>
+<b>Оценка: </b><?php print $rating; ?><br>
+</div>
+<center><form action="index.php" method="post">
+<input type="hidden" name="cmd" value="comment">
+<input type="hidden" name="imgid" value="<?php print $imgid; ?>">
+
+<?php print $rated;?>
+
+<?php print $commentPanel?>
+<br>Коментари:<br />
+
+
+<table class = "cmnt">
+<tr><?php print $comments?></tr>
+</table>
+</center>

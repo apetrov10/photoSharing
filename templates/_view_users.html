@@ -1,0 +1,18 @@
+<center>
+<table width="620">
+<form action="index.php" method="get">
+<input type="hidden" name="cmd" value="searchAutors">
+<input type="hidden" name="pg" value="1">
+Търсене на потребител: 
+<input type="text" size="25" name="search" value="<?php print $search;?>">&nbsp;
+
+<input type="submit" value=" Търси ">
+
+</form>
+<tr>
+	<td colspan="2"><b>Потребители:</b></td>
+</tr>
+<?php print $users; ?>
+</table>
+<?php print $pages; ?>
+</center>

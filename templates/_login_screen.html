@@ -1,0 +1,22 @@
+<center>
+<p><b>Вход за регистрирани потребители</b></p>
+<p><font color="red"><?php print $errorMsg; ?></font></p>
+<form action="index.php" method="post">
+<input type="hidden" name="cmd" value="login">
+<table width="300" cellspacing="3">
+<tr>
+	<td align="right">Потребителско име:</td>
+	<td><input type="text" name="username" size="20" maxlength="20"></td>
+</tr>
+<tr>
+	<td align="right">Парола:</td>
+	<td><input type="password" name="password" size="20"></td>
+</tr>
+
+<tr>
+	<td colspan="2" align="center"><input name = "enter" type="submit" value=" Влез ->| "></td>
+</tr>
+</table>
+</form>
+<a class="inner" href="index.php?cmd=frgtPswd">Забравена парола?</a>
+</center>
